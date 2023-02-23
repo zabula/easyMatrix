@@ -72,6 +72,7 @@ struct easyMatrix* leftMatrix(uint8 x_i,uint8 y_i, struct easyMatrix* const in,
     }
     return out;
 }
+
 struct easyMatrix* adjMatrix(struct easyMatrix* const in, 
                              struct easyMatrix* out) {
     if(in->rows != out->cols) return NULL;
@@ -195,6 +196,7 @@ struct easyMatrix* invLMatrix(struct easyMatrix* const L,
     }
     return L_inv;
 }
+
 struct easyMatrix* invUMatrix(struct easyMatrix* const U, 
                               struct easyMatrix* U_inv) { 
     uint8 N = U->cols;
@@ -218,6 +220,7 @@ struct easyMatrix* invUMatrix(struct easyMatrix* const U,
     }
     return U_inv;
 }
+
 DATA_TYPE fastDetMatrix(struct easyMatrix* const in) {
     uint8 x = in->rows;
     uint8 y = in->cols;
@@ -353,6 +356,7 @@ struct easyMatrix* solveEquationMatrix(const struct easyMatrix* const A,
     DELETE_DYNAMIC_MATRIX(AINV);
     return X;
 }
+
 void dumpMatrix(struct easyMatrix* const e) {
     int count = 0;
     int x = e->rows;
