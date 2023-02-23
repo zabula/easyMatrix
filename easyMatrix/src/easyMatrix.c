@@ -58,8 +58,8 @@ struct easyMatrix* leftMatrix(uint8 x_i,uint8 y_i, struct easyMatrix* const in,
     if(in->rows != (out->rows+1)) return NULL;
     int index = 0;
     int index_src = 0;
-    uint8 x =in->rows;
-    uint8 y =in->cols;
+    uint8 x = in->rows;
+    uint8 y = in->cols;
     for(uint8 kk=0;kk<x;++kk) {
         for(uint8 ww=0;ww<y;++ww) {
             if(!(kk==x_i||ww==y_i)) {

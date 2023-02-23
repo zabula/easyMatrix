@@ -43,7 +43,7 @@ struct easyMatrix* copyMatrix(struct easyMatrix* const a,struct easyMatrix* c); 
 
 struct easyMatrix* transMatrix(struct easyMatrix* const a,struct easyMatrix* c); //matrix转置
 
-DATA_TYPE detMatrix(struct easyMatrix* const a);
+DATA_TYPE detMatrix(struct easyMatrix* const a); //求行列式
 
 DATA_TYPE invMatrix(struct easyMatrix* const a, struct easyMatrix*b);
 
